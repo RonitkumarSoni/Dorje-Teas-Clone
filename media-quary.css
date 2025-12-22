@@ -1,0 +1,175 @@
+/*Laptop & Small Desktop (Max-Width: 1200px) */
+@media screen and (max-width: 1200px)
+{
+    .Darjeeling-teas-section, 
+    .footer,
+    .testimonial-section {
+        padding: 3rem 3%; 
+    }
+
+    .nav-bar {
+        gap: 1.5rem;
+    }
+    .nav-bar img {
+        margin-left: 1rem;
+    }
+
+}
+ 
+
+/* Tablet & Portrait Mode (Max-Width: 992px) */
+
+@media screen and (max-width: 992px) {
+    .hero {
+        height: 60vh;
+        min-height: 400px; 
+    }
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .footer {
+        height: auto; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .about, .info {
+        flex-basis: 45%; 
+        text-align: center;
+        padding: 0;
+    }
+    
+    .logos {
+        justify-content: center;
+    }
+    .login-container label,
+    .login-container input,
+    .login-container .forgot,
+    .login-container .btns {
+        width: 60%;
+    }
+
+    
+}
+
+/* The "800px Layout Fix" (Targeting 850px and below) */
+@media screen and (max-width: 850px) {
+    .seen {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .startups {
+        height: auto; 
+        flex-wrap: wrap; 
+        gap: 2rem;
+        padding: 2rem 1rem;
+        justify-content: center;
+    }
+    .startups img,
+    .startups img:nth-child(n) { 
+        width: auto !important;
+        max-width: 120px;
+        max-height: 60px;
+        margin: 0;
+    }
+    .brands {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+        gap: 2rem;
+    }
+
+    .brands img {
+        margin-left: 0 !important;
+        width: 5rem !important; 
+    }
+}
+
+ /* Mobile Landscape (Max-Width: 768px) */
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 0 1.5rem;
+        height: 10vh;
+    }
+    
+    .nav-bar li:not(:first-child) { display: none; }
+    .nav-bar img { margin-left: 0; width: 2.5rem; }
+    .hemburger { display: block; font-size: 1.5rem; cursor: pointer; }
+
+    .ads-video {
+        height: auto;
+        display: block; 
+        text-align: center;
+    }
+
+    .ads-video iframe {
+        width:auto ; 
+        height: auto !important;
+        aspect-ratio: 16 / 9; 
+        max-width: 100%;
+    }
+    .video-card {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+}
+
+/* Small Mobile (Max-Width: 576px) */
+@media screen and (max-width: 576px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .hero {
+        height: 50vh;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+    
+    .about, .info {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .login-container label,
+    .login-container input,
+    .login-container .forgot,
+    .login-container .btns {
+        width: 90%;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    .Darjeeling-teas-section h1 {
+        font-size: 1.8rem;
+    }
+    #test-prev{
+      display: none;
+    }
+    #test-next{
+      display: none;
+    }
+    #playlist-prev{
+      display: none;
+    }
+    #playlist-next{
+      display: none;
+    }
+}
