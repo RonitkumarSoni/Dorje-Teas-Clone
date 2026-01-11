@@ -1,7 +1,7 @@
 /* Large Laptops & Desktops (Max Width: 1200px) --- */
 @media (max-width: 1200px) {
     .Darjeeling-teas-section {
-        height: auto !important; 
+        height: auto !important;
         min-height: 100vh;
         padding-bottom: 4rem;
     }
@@ -20,11 +20,12 @@
         width: 100%;
         margin: 0 !important;
     }
+
     .ads-video iframe {
         max-width: 90%;
     }
 
-    .last2-card{
+    .last2-card {
         display: none;
     }
 }
@@ -37,60 +38,73 @@
         padding: 2rem 0;
         gap: 2rem;
     }
-    
+
     .startups img {
         margin: 0.5rem;
-        flex-shrink: 0; 
+        flex-shrink: 0;
     }
 
-    .cards, .last2-card {
+    .cards,
+    .last2-card {
         grid-template-columns: repeat(2, 1fr);
         padding: 0 2rem;
     }
+
     .nav {
         padding: 0 2rem;
     }
+
     .nav-bar {
         gap: 1.5rem;
     }
 
-    #playlist-next{
+    #playlist-next {
         display: none;
     }
-    #playlist-prev{
+
+    #playlist-prev {
         display: none;
     }
 }
 
 /* Tablets Portrait & Large Phones (Max Width: 768px) */
 @media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden; 
+
+    html,
+    body {
+        overflow-x: hidden;
         width: 100%;
     }
+
     .nav-bar {
-        display: none; 
+        display: none;
     }
+
     .hemburger {
-        display: block; 
+        display: block;
         font-size: 1.5rem;
         cursor: pointer;
         padding-right: 1rem;
     }
+
     .icons {
-        margin-right: 1rem; 
+        margin-right: 1rem;
     }
+
     .hero {
-        height: 70vh; 
+        height: 70vh;
     }
+
     .hero h1 {
         font-size: 2rem;
     }
+
     .Darjeeling-teas-section {
         padding: 2rem 1rem;
     }
 
-    .cards, .last2-card {
+    .cards,
+    .last2-card {
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 0;
@@ -102,18 +116,20 @@
     }
 
     .btn {
-        width: 100%; 
+        width: 100%;
         margin: 1rem 0;
     }
 
-    .brands-row, .startups {
+    .brands-row,
+    .startups {
         height: auto;
         padding: 2rem 1rem;
     }
-    
+
     .startups {
         justify-content: center;
     }
+
     .ads-video {
         padding: 2rem 1rem;
         min-height: auto;
@@ -123,7 +139,7 @@
     .ads-video iframe {
         width: 100% !important;
         height: auto !important;
-        aspect-ratio: 16 / 9; /* Ensures correct video shape */
+        aspect-ratio: 16 / 9;
         border-radius: 0.5rem;
     }
 
@@ -134,12 +150,14 @@
         text-align: center;
     }
 
-    .about, .info, .logos {
+    .about,
+    .info,
+    .logos {
         width: 100%;
         margin-bottom: 2rem;
         padding: 0;
     }
-    
+
     .logos {
         justify-content: center;
     }
@@ -147,34 +165,43 @@
 
 /* Small Mobile Devices (Max Width: 480px) */
 @media (max-width: 480px) {
-    .Darjeeling-teas-section h1, 
+
+    .Darjeeling-teas-section h1,
     .hero h1,
     .playlist h1 {
         font-size: 1.5rem;
     }
+
     .startups img {
-        width: 35% !important; 
+        width: 35% !important;
         height: auto;
         margin: 0.5rem;
     }
+
     .box-card {
         border-radius: 0.8rem;
     }
-    
+
     .price h4 {
         font-size: 1rem;
     }
+
+    .box-card{
+        height: 500px;
+    }
+
 }
 
-/* Height-Based Issues (Landscape Mobile)*/
 @media (max-height: 500px) and (orientation: landscape) {
-    .hero, .Darjeeling-teas-section {
+
+    .hero,
+    .Darjeeling-teas-section {
         height: auto;
         min-height: 100vh;
         padding-top: 4rem;
     }
-    
+
     .nav {
-        position: relative; 
+        position: relative;
     }
 }

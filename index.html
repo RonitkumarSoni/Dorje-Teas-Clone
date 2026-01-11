@@ -29,6 +29,8 @@
   <nav class="nav">
     <a href="#" class="nav-toggle hover-links" id="nav-toggle">
       <i class="fa-solid fa-bars"></i>
+
+
       <ul class="nav-bar">
         <img src="./Dorjteas_assets/asset 0.png" alt="Logo">
 
@@ -125,6 +127,24 @@
 
   </nav>
 
+  <!-- Side-menu Section  -->
+  <div class="sidebar-div" id="sidePanel">
+    <div class="sidebar-header">
+      <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+      <div class="cross" id="closeSidebar">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+
+    <div class="link-container">
+      <a href="#" class="menu-link">Shop Now <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#" class="menu-link">Newly Launched <i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#" class="menu-link">Blogs</a>
+      <a href="#" class="menu-link">Learn More</a>
+      <a href="./accounts.html" class="menu-link">My Account</a>
+    </div>
+
+  </div>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -398,6 +418,23 @@
   </footer>
 
   <script src="./script.js"></script>
+
+  <script>
+    const sidePanel = document.getElementById('sidePanel');
+    const navToggle = document.getElementById('nav-toggle');
+    const closeSidebar = document.getElementById('closeSidebar');
+
+    navToggle.addEventListener('click', () => {
+      sidePanel.classList.add('active');
+      navToggle.classList.add('open');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+      sidePanel.classList.remove('active');
+      navToggle.classList.remove('open');
+    });
+  </script>
+
 </body>
 
 </html>
